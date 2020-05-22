@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+* {
+    margin:0; padding:0;
+  }
+
+header{
+    display: inline;
+}
+
+#menu{
+    width: 24px;
+    height: 22px;
+    background: transparent;
+    display: block;
+    margin-top: 33px;
+    margin-left: 33px;
+    margin-right: auto;
+    
+}
+
+#title{
+    width: 132px;
+    height: 28.53px;
+    background: transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
+
+ul.sns{
+    text-align: right;
+}
+
+ul.sns li{
+    display:inline;
+    margin: 0 32px;
+}
+
+
+header #twitter{
+    width: 20px;
+    height: 16.25px;
+    /*background:#15181b;*/
+
+}
+
+header #facebook{
+    width: 10.38px;
+    height: 20px;
+    /*background:#15181b;*/
+
+}
+
+header #youtube{
+    width: 20px;
+    height: 14px;
+    background: transparent;
+}
+
+#topborder{
+    width: 20px;
+    height: 14px;
+    background: transparent;
+   
+}
+
+ul.menubar{
+    text-align: center;
+    border: medium solid #E3E3E3;
+    padding: 48px;
+}
+
+ul.menubar li{
+    display:inline;
+    margin: 0 32px;
+    
+}
+
+#mainimg{
+    width: 100vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section1{
+    display: block;
+    margin-top: 116px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sponser{
+    display: inline-block;
+    margin: 10px;
+    margin-top: 211px;
+}
+
+ul.menubar{
+    text-align: center;
+}
+
+ul.cell li{
+    display:inline;
+    margin: 73.6px 61.2px;
+    
+}
