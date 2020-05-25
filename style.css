@@ -4,38 +4,38 @@
     margin:0; padding:0;
   }
 
-header{
-    display: inline;
-}
+  /*header*/
 
+.header{
+    display: flex;
+    flex-wrap:nowrap;
+}
 #menu{
     width: 24px;
     height: 22px;
     background: transparent;
-    display: block;
-    margin-top: 33px;
-    margin-left: 33px;
-    margin-right: auto;
-    
+ 
+    margin: 33px 33px;
+   
 }
 
 #title{
     width: 132px;
     height: 28.53px;
     background: transparent;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
- 
+    
+    margin: 23px 560px 22.4px 560px; 
 }
 
 ul.sns{
-    text-align: right;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    margin:30px 24px;
 }
 
 ul.sns li{
     display:inline;
-    margin: 0 32px;
+    margin: 0 16px;
 }
 
 
@@ -66,13 +66,13 @@ header #youtube{
    
 }
 
-ul.menubar{
+ul.HomeMenubar{
     text-align: center;
-    border: medium solid #E3E3E3;
-    padding: 48px;
+    border-top: solid 1px #E3E3E3;
+    padding: 16px;
 }
 
-ul.menubar li{
+ul.HomeMenubar li{
     display:inline;
     margin: 0 32px;
     
@@ -85,12 +85,17 @@ ul.menubar li{
     margin-right: auto;
 }
 
+/*セクション１*/
+
 #section1{
-    display: block;
-    margin-top: 116px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    margin: auto 40px;
 }
+
+
+
+
+/*スポンサーリンク一覧*/
 
 .sponser{
     display: inline-block;
@@ -98,12 +103,88 @@ ul.menubar li{
     margin-top: 211px;
 }
 
-ul.menubar{
+ul.cell{
+    display: flex;
+    justify-content: space-between;
     text-align: center;
+    flex-wrap: wrap;
+    margin: auto 40px;
+    
 }
 
 ul.cell li{
+    width: 160px;
+    height: 80px;
+    margin: 8px 24px;
+    text-align: center;
+    display:block;
+    
+    
+}
+
+/* page Under*/
+.page_Under{
+    display: inline-flex;
+    margin: 240px 0 0 0;
+}
+
+
+#U_logo{
+    width: 240px;
+    height: 51.88px;
+    background: transparent;
+    margin: auto 149px;
+
+}
+
+.address{
+    margin: auto 109px;
+}
+
+.Link{
+    display: flex;  
+    flex-direction: row-reverse;
+    margin: auto 80px;
+    align-items: center;
+}
+
+ul.LinkBox{
+    width:224px; height:176px;
+    margin:16px; padding:20px;
+    border:1px solid #ffffff;
+    
+}
+
+ul.LinkBox li{
+    display: flex;
+    align-items: center;
+    margin:16px auto;
+
+}
+
+
+/*hooder*/
+
+.hooder{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    border-bottom: solid 4px #FF585E;
+    background: #888888;
+    
+    padding: 30px;
+}
+
+ul.menubar{
+    display: flex;
+    
+    text-align: right;
+}
+
+ul.menubar li{
     display:inline;
-    margin: 73.6px 61.2px;
+    margin: 0 30px;
     
 }
