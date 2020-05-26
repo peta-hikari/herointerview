@@ -81,18 +81,92 @@ ul.HomeMenubar li{
 #mainimg{
     width: 100vw;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto auto;
 }
 
-/*セクション１*/
+/*コンテンツ*/
+.contents{
+    margin: 119px auto;
+}
 
-#section1{
+/*セクション1*/
+
+
+.section_1{
+   
+    margin:  40px;
+}
+
+/*セクション2*/
+.section_2{
+    display: inline-flex;
+}
+
+.moreBtn{
+    
+    width: 269px; height: 56px;
+    border:solid 2px #FF585E;
+    box-shadow: 4px -4px #35BEED;
+    transform-origin: left bottom;
+    transform: rotateZ(90deg); 
+    line-height: 56px;
+}
+
+.special{
+    
+    width: 760px; height: 451px;
+    background-color:#F7F7F7;
+}
+
+ul.contentMenu{
+    
+}
+
+ul.contentMenu li{
     display: flex;
-    margin: auto 40px;
+    width: 360px; height: 57px;
+    border-bottom:solid 1px #707070;
+    line-height: 57px;
+    margin: auto 80px; 
 }
 
+/*セクション3*/
+.section_3{
+   margin: auto 39px;
+}
 
+ul.picUp{
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
+ul.picUp li{
+    display: inline-block;
+    width: 373px; height: 120px;
+    border: solid 1px #ffffff;
+    box-shadow: 0 0 12px #cccccc;
+
+    align-items: center;
+    margin: 20px 41px;
+}
+
+.picUp_join{
+    display: inline-block;
+    width: 373px; height: 120px;
+    border-bottom:solid 1px #FF585E;
+    border-left:solid 1px #FF585E;
+}
+
+.Btn{
+    display: flex;
+    width: 320px; height: 56px;
+    border:solid 2px #FF585E;
+    box-shadow: 4px 4px #35BEED;
+
+    margin: 36px 39px;
+    line-height: 56px;
+}
 
 
 /*スポンサーリンク一覧*/
