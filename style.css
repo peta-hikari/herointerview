@@ -108,10 +108,29 @@ ul.HomeMenubar li{
 
 }
 
-.section1_title{
-    width: 246px; height: 21px;
+.section1_title {
+    width: 256px; height: 21px;
     border: solid 1px #000000;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
+    font-family: "Airbnb Cereal App";
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    line-height: 20px;
+    color: #15181b;
+    
+}
+
+.section1_title:before
+ {
+    border-top: 1px solid;
+    content: "";
+    width: 120px;
+    margin-right: 16px;
 }
 
 ul.section1_sentence{
@@ -121,12 +140,14 @@ ul.section1_sentence{
     width: 320px; height: 176px;
     border: solid 1px #000000;
     margin-top: 41px;
+    
 }
 
 ul.section1_sentence li{
     display: flex;
     width: 32px; height: 32px;
     border: solid 1px #000000;
+
 
     font-family: "Noto Sans CJK JP";
     font-weight: normal;
@@ -138,9 +159,18 @@ ul.section1_sentence li{
 }
 
 .spotlight{
-    width: 224px; height: 21px;
+    width: 238px; height: 21px;
     border: solid 1px #000000;
     margin: 41px 48px auto;
+
+    font-family: "Airbnb Cereal App";
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.24em;
+    line-height: 20px;
+
+    color: #15181b;
+
 }
 
 .section1_btn{
@@ -169,36 +199,38 @@ ul.section1_sentence li{
 .section2_left{
     display: block;
     width: 440px; height: 456px;
-    border: solid 1px #000000;
+    border: solid 1px #fff;
 }
 
 .section_title {
     width: 183px; height: 21px;
-    border: solid 1px #000000;
+    border: solid 1px #fff;
     margin-left: 40px;
     
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+
+    font-family: "Airbnb Cereal App";
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    line-height: 20px;
+    color: #15181b;
+
 }
 
-.section_title:before,
-.section_title:after {
+.section_title:before{
     border-top: 1px solid;
     content: "";
     width: 120px;
+    margin-right: 16px;
 }
-
-/*.section_title:before{
-    right: 100%;
-}*/
-.section_title:after {
-    margin-left: 1em; /* 文字の左隣 */
- }
-  
+ 
 
 .headline{
     width: 210px; height: 81px;
-    border: solid 1px #000000;
+    border: solid 1px #fff;
     margin:38px 40px;
 
     font-family: "Airbnb Cereal App";
@@ -224,7 +256,7 @@ ul.section1_sentence li{
 
 ul.contentMenu{
     width: 360px; height: 267px;
-    border:solid 1px #000000;
+    border:solid 1px #fff;
     margin-left:20px; 
 }
 
@@ -253,7 +285,13 @@ ul.special{
     margin: 24px;
 }
 
+ul.special li:first-child{
+    margin-top: 0px;
+}
+
 ul.special li{
+    display: inline-block;
+    margin-top: 16.3px;
     width: 712px; height: 64px;
     border: solid 1px #000000;
 
@@ -262,15 +300,34 @@ ul.special li{
 /*セクション3*/
 .section_3{
     width: 1205px; height: 427px;
-    border: solid 1px #000000;
+    border: solid 1px #fff;
     margin: 119px 39px;
 }
 
-.section3_title{
-    width: 256px; height: 21px;
-    border: solid 1px #000000;
+.section3_title {
+    width: 268px; height: 21px;
+    border: solid 1px #fff;
+       
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    font-family: "Airbnb Cereal App";
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    line-height: 20px;
+    color: #15181b;
 
 }
+
+.section3_title:before{
+    border-top: 1px solid;
+    content: "";
+    width: 120px;
+    margin-right: 16px;
+}
+ 
 
 .headline3{
     display: inline-flex;
@@ -280,7 +337,7 @@ ul.special li{
 
 .headline3_1{
     width: 210px; height: 41px;
-    border: solid 1px #000000;
+    border: solid 1px #fff;
     margin-left: 40px;
 
     font-family: "Airbnb Cereal App";
@@ -292,7 +349,7 @@ ul.special li{
 
 .headline3_2{
     width: 169px; height: 41px;
-    border: solid 1px #000000;
+    border: solid 1px #fff;
     margin-left: 275px;
 
     font-family: "Airbnb Cereal App";
@@ -305,7 +362,7 @@ ul.special li{
 
 .headline3_3{
     width: 64px; height: 21px;
-    border: solid 1px #000000;
+    border: solid 1px #fff;
     margin-left: 8px;;
 
     font-family: "Airbnb Cereal App";
@@ -370,7 +427,7 @@ ul.picUp li{
 
 .headline4{
     width: 456px; height: 41px;
-    border: solid 1px #000000;
+    border: solid 1px #fff;
     margin:38px 40px;
 
     font-family: "Airbnb Cereal App";
