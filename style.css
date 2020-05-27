@@ -143,6 +143,15 @@ ul.section1_sentence li{
     margin: 41px 48px auto;
 }
 
+.section1_btn{
+    display: flex;
+    width: 320px; height: 56px;
+    border:solid 2px #FF585E;
+    box-shadow: 4px 4px #35BEED;
+    line-height: 56px;
+    margin-top: 40px;
+}
+
 .section1_right{
     width: 840px; height: 519px;
     border: solid 1px #000000;
@@ -172,19 +181,23 @@ ul.section1_sentence li{
     align-items: center;
 }
 
-.section_title :before,
+.section_title:before,
 .section_title:after {
     border-top: 1px solid;
     content: "";
     width: 120px;
 }
 
-.section_title:before{
+/*.section_title:before{
     right: 100%;
-}
+}*/
+.section_title:after {
+    margin-left: 1em; /* 文字の左隣 */
+ }
+  
 
 .headline{
-    width: 204; height: 83;
+    width: 210px; height: 81px;
     border: solid 1px #000000;
     margin:38px 40px;
 
@@ -260,16 +273,46 @@ ul.special li{
 }
 
 .headline3{
-    width: 204; height: 83;
-    border: solid 1px #000000;
+    display: inline-flex;
     margin-top: 38px;
+    align-items: flex-end;
+}
+
+.headline3_1{
+    width: 210px; height: 41px;
+    border: solid 1px #000000;
+    margin-left: 40px;
+
+    font-family: "Airbnb Cereal App";
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;  
+    color: #15181b;
+}
+
+.headline3_2{
+    width: 169px; height: 41px;
+    border: solid 1px #000000;
+    margin-left: 275px;
 
     font-family: "Airbnb Cereal App";
     font-weight: bold;
     font-size: 32px;
     line-height: 40px;
-    text-align: left;
     color: #15181b;
+    
+}
+
+.headline3_3{
+    width: 64px; height: 21px;
+    border: solid 1px #000000;
+    margin-left: 8px;;
+
+    font-family: "Airbnb Cereal App";
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #15181b;    
 }
 
 ul.picUp{
@@ -295,18 +338,19 @@ ul.picUp li{
     border-left:solid 1px #FF585E;
 }
 
-.Btn{
+.section3_btn{
     display: flex;
     width: 320px; height: 56px;
     border:solid 2px #FF585E;
     box-shadow: 4px 4px #35BEED;
     line-height: 56px;
+    margin-left: 39px;
 }
 
 
 /*スポンサーリンク一覧*/
 
-.sponser{
+.section4{
     display: inline-block;
     margin: 10px;
     margin-top: 211px;
@@ -314,13 +358,26 @@ ul.picUp li{
 
 
 
-.section_title_font{
+.section4_title{
     font-family: "Airbnb Cereal App";
     font-weight: bold;
     font-size: 16px;
     letter-spacing: 0.08em;
     line-height: 20px;
 
+    color: #15181b;
+}
+
+.headline4{
+    width: 456px; height: 41px;
+    border: solid 1px #000000;
+    margin:38px 40px;
+
+    font-family: "Airbnb Cereal App";
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: left;
     color: #15181b;
 }
 
@@ -343,65 +400,139 @@ ul.cell li{
     
 }
 
-/* page Under*/
-.page_Under{
-    display: inline-flex;
-    margin: 240px 0 0 0;
-}
-
-
-#U_logo{
-    width: 240px;
-    height: 51.88px;
-    background: transparent;
-    margin: auto 149px;
-
-}
-
-.address{
-    margin: auto 109px;
-}
-
-.Link{
-    display: flex;  
-    flex-direction: row-reverse;
-    margin: auto 80px;
-    align-items: center;
-}
-
-ul.LinkBox{
-    width:224px; height:176px;
-    margin:16px; padding:20px;
-    border:1px solid #ffffff;
-    
-}
-
-ul.LinkBox li{
-    display: flex;
-    align-items: center;
-    margin:16px auto;
-
-}
-
 
 /*hooder*/
 
 .hooder{
+    width: 1280px; height: 336px;
+    border: solid 1px #000000;
+    margin-top: 240px;
+}
+
+.hooder_up{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    width: 1066px; height: 176px;
+    border: solid 1px #000000;
+    margin-left: 40px;
+}
+
+.hooder_logo{
+    width: 240px; height: 51.88px;
+    border: solid 1px #000000;
+    margin-left: 109px;
+
+}
+
+.hooder_address{
+    width: 304px; height: 72px;
+    border: solid 1px #000000; 
+    margin-left: 109px;
+}
+
+.office{
+    width: 64px; height: 21px;
+    border: solid 1px #000000; 
+
+    font-family: "Noto Sans CJK JP";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    color: #15181b;
+}
+
+.adress{
+    width: 304px; height: 42px;
+    border: solid 1px #000000; 
+    margin-top: 9px;
+
+    font-family: "Noto Sans CJK JP";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+    color: #15181b;
+}
+
+ul.link{
+    width: 224px; height: 176px;
+    border: solid 1px #000000; 
+    margin-left: 80px;
+}
+
+ul.link li:first-child{
+    width:223px; height:48px;
+    border:1px solid #000000;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+ul.link li{
+    width:223px; height:48px;
+    border:1px solid #000000;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    width: 48px; height: 48px;
+    border: solid 1px #000000;
+
+}
+
+
+
+.hooder_under{
+    display: flex;
+    width: 1280px; height: 80px;
+
 
     border-bottom: solid 4px #FF585E;
     background: #888888;
-    
-    padding: 30px;
+    margin-top: 80px;
 }
+
+.copywrite{
+    width: 156px; height: 16px;
+    border: solid 1px #000000;
+    margin: 32px 0px 0px 104px;
+
+    font-family: "Airbnb Cereal App";
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    line-height: 20px;
+    color: #fff;
+}
+
+ul.hooder_sns{
+    display: flex;
+    width: 114px; height: 20px;
+    border: solid 1px #000000;
+    justify-content: space-between;
+
+    margin: 32px 0px 0px 94px;
+}
+
+ul.hooder_sns li{
+    display:inline;
+}
+
+
 
 ul.menubar{
     display: flex;
-    
-    text-align: right;
+    margin-top: 31px;
+
+    font-family: "Airbnb Cereal App";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    color: #fff;
+
 }
 
 ul.menubar li{
