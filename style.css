@@ -214,6 +214,21 @@ ul.section1_sentence2 li{
     color: #15181b;
 }
 
+.btn_name{
+    margin-left: 32px;
+}
+
+.btn1_next{
+    width: 8px; height: 8px;
+    border-top: solid 1px #15181B;
+    border-right: solid 1px #15181B;
+
+    transform-origin: left top;
+    transform: rotate(45deg) ;
+    margin-left: 72.5px;
+    margin-top: 22.5px;
+}
+
 .section1_right{
     position: relative;
     width: 880px; height: 559px;
@@ -302,11 +317,9 @@ img.next_page{
 }
 
 .moreBtn{
-    writing-mode: tb-rl;
     width: 56px; height: 269px;
     border:solid 2px #FF585E;
     box-shadow: 4px 4px #35BEED;
-    line-height: 56px;
 
     font-family: "Noto Sans CJK JP";
     font-weight: bold;
@@ -314,7 +327,29 @@ img.next_page{
     letter-spacing: 0.08em;
     line-height: 56px;
     color: #15181b;
+}
 
+.btn_name_2{
+    writing-mode: tb-rl;
+    margin-top: 32px;
+
+    font-family: "Airbnb Cereal App";
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.24em;
+    line-height: 32px;
+    color: #15181b;
+}
+
+.btn2_next{
+    width: 8px; height: 8px;
+    border-top: solid 1px #15181B;
+    border-right: solid 1px #15181B;
+
+    transform-origin: left top;
+    transform: rotate(45deg);
+    margin-left: 20.5px;
+    margin-top: 151.5px;
 }
 
 ul.contentMenu{
@@ -499,6 +534,17 @@ ul.picUp li img.join{
 
 }
 
+.btn3_next{
+    width: 8px; height: 8px;
+    border-top: solid 1px #15181B;
+    border-right: solid 1px #15181B;
+
+    transform-origin: left top;
+    transform: rotate(45deg) ;
+    margin-left: 117.5px;
+    margin-top: 22.5px;
+}
+
 
 /*スポンサーリンク一覧*/
 
@@ -666,7 +712,7 @@ p{
     color: #fff;
 }
 
-ul.hooder_sns{
+.hooder_sns{
     display: flex;
     width: 114px; height: 20px;
     justify-content: space-between;
@@ -674,10 +720,9 @@ ul.hooder_sns{
     margin: 32px 0px 0px 94px;
 }
 
-ul.hooder_sns li{
-    display:inline;
-}
-
+.cls-1 {
+    fill: #fff;
+  }
 
 
 ul.hooder_menubar{
@@ -698,3 +743,4 @@ ul.hooder_menubar{
 ul.hooder_menubar li{
     display:inline;    
 }
+
