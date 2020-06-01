@@ -1,5 +1,58 @@
 @charset "utf-8"
 
+/**section_title 継承**/
+.section_title()
+    display flex
+    justify-content flex-end
+    align-items center
+
+    font-family "Airbnb Cereal App"
+    font-weight bold
+    font-size 16px
+    letter-spacing 0.08em
+    line-height 20px
+    color: #15181b
+
+.section_title:before
+    border-top 1px solid
+    content ""
+    width 120px
+    margin-right 16px
+
+/*btn 継承*/
+.section_btn
+    display flex
+    width 320px
+    height 56px
+    border solid 2px #FF585E
+    box-shadow 4px 4px #35BEED
+    line-height 56px
+
+.btn_font
+    font-family "Noto Sans CJK JP"
+    font-weight bold
+    font-size 14px
+    letter-spacing 0.08em
+    line-height 56px
+    color #15181b 
+
+.btn_next
+    width 8px
+    height 8px
+    border-top solid 1px #15181B
+    border-right solid 1px #15181B
+    transform-origin left top
+    transform rotate(45deg) 
+
+/*headline 継承*/
+.headline_font
+    font-family "Airbnb Cereal App"
+    font-weight bold
+    font-size 32px
+    line-height 40px
+    text-align left
+    color #15181b
+
 *
   margin 0
   padding 0
@@ -73,4 +126,211 @@ ul.home_menubar li
     width 360px
     height 191px
 
+.top_right_small
+    width 360px
+    height 107px
 
+
+/*section1*/
+
+.section_1
+    display flex
+    width 1240px
+    height 560px
+    margin 119px 40px auto
+
+.section1_left
+    width 324px
+    height 399px
+
+.section1_title
+    width 256px
+    height 21px
+    @extend .section_title
+
+.section1_title:before
+    @extend .section_title:before
+
+ul.section1_sentence1
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    width 320px
+    height 32px
+    margin-top 41px
+
+ul.section1_sentence1 li
+    display flex
+    font-family "Noto Sans CJK JP"
+    font-weight normal
+    font-size 32px
+    text-align center
+    color #15181b
+
+ul.section1_sentence1 li.line
+    width 32px
+    height 6px
+    margin-top 13px
+
+.spotlight
+    width 238px
+    height 21px
+    margin 41px 48px auto
+    font-family "Airbnb Cereal App"
+    font-weight 500
+    font-size 16px
+    letter-spacing 0.24em
+    line-height 20px
+    color #15181b
+
+
+.section1_btn
+    @extend .section_btn
+    @extend .btn_font
+    margin-top 40px
+
+.btn_name
+    margin-left 32px
+
+.btn1_next
+    @extend .btn_next
+    margin 22.5px 0px 0px 72.5px
+
+.section1_right
+    position relative
+    width 880px
+    height 559px
+    margin-left 36px
+
+.page_bar
+    display flex
+    width 840px
+    height 145px
+    background #000000
+    position absolute
+    bottom 0%
+    right 0%
+
+img.page
+    position relative
+    width 840px
+    height 519px
+    position absolute
+    top 0%
+    left 0%
+
+img.next_page
+    width 280px
+    height 148px
+    position absolute
+    bottom 20px
+    right 20px
+
+
+/*section2*/
+
+.section_2
+    display flex
+    width 1240px
+    height 456px
+    margin-top 119px
+
+.section2_left
+    display block
+    width 440px
+    height 456px
+
+.section2_title
+    width 183px
+    height 21px
+    margin-left 40px
+    @extend .section_title
+
+.section2_title:before
+    @extend .section_title:before
+
+.headline2
+    width 210px
+    height 81px
+    margin 38px 40px
+    @extend .headline_font
+
+.section2_menu
+    display flex
+
+.section2_btn
+    width 56px
+    height 269px
+    border solid 2px #FF585E
+    box-shadow 4px 4px #35BEED
+    font-family "Airbnb Cereal App"
+    font-weight bold
+    font-size 14px
+    letter-spacing 0.24em
+    line-height 32px
+    color #15181b
+
+.btn2_name
+    writing-mode tb-rl
+    margin-top 32px
+
+.btn2_next
+    @extend .btn_next
+    margin 151.5px 0 0 20.5px
+
+ul.menu_content
+    width 360px
+    height 267px
+    margin-left 20px
+
+ul.menu_content li
+    display flex
+    width 360px
+    height 57px
+    border-bottom solid 1px #707070
+    line-height: 57px;
+    font-family "Noto Sans CJK JP"
+    font-weight 500
+    font-size 16px
+    color #888
+
+    &:first-child
+        width 360px
+        height 41px
+        border-bottom solid 3px #F3581A
+        line-height 21px
+        text-align left
+        color #15181b
+
+.section2_right
+    width 760px
+    height 451px
+    background #f7f7f7
+    margin-left 40px
+
+
+/*section3*/
+.section_3
+    width 1205px
+    height 427px
+    margin 119px 39px auto
+
+.section3_title
+    width 268px
+    height 21px
+    @extend .section_title
+
+.section3_title:before
+    @extend .section_title:before
+
+.headline3
+
+
+/*section4*/
+.section4_title
+    width 210px
+    height 21px
+    @extend .section_title
+
+.section4_title:before
+    @extend .section_title:before
