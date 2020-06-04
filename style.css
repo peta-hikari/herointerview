@@ -935,7 +935,6 @@
     }
 
     .headline3{
-        border: solid 1px #000;
         width: auto;
         display: block;
     }
@@ -981,7 +980,6 @@
 
     .headline4{
         width: 302px; height: 81px;
-        border: solid 1px #000;
     }
 
     .cell{
@@ -1037,11 +1035,14 @@
     }
 
     ul.hooder_menubar{
-        display: block;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
         order: 1;
-        width: 131.81px; height: 196px;
+        width: 115px; height: 196px;
         border: solid 1px #000;
         margin-left: 227px;
+        text-align: right;
     }
 
     ul.hooder_menubar li{
