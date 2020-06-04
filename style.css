@@ -782,7 +782,8 @@
 
      .title{
          width: 148.03px; height: 32px;
-         margin: 19px 0;
+         margin: 19px ;
+         margin-left: auto; margin-right: auto;
      }
      ul.sns{
          display: none;
@@ -796,6 +797,7 @@
      .top{
         border: solid 1px #000;
          width: 375px; height: 375px;
+         margin-left: auto; margin-right: auto;
      }
 
      .top_left img{
@@ -848,7 +850,7 @@
 
     .section_2{
         border: solid 1px #000;
-        width: auto; height: 647px;
+        width: 375px; height: 647px;
         display: flexbox;
         flex-direction: column;
         margin-top: 80px;
@@ -866,7 +868,7 @@
     }
 
     .headline{
-        width: 204px; height: 81px;
+        width: 210px; height: 81px;
         border: solid 1px #000;
         font-size: 32px;
         margin-left: 0;
@@ -982,21 +984,24 @@
         border: solid 1px #000;
     }
 
-    ul.cell{
-        width: 343px; height: 50px;
-        border: solid 1px #000;
-        justify-content: space-between;
+    .cell{
+        display: grid;
+        margin-top: 40px;
+        gap: 8px 20px;
+        grid-template-rows: 50px;
+        grid-template-columns: 101px 101px 101px;
+        
     }
 
-    ul.cell li{
+    .item{
         width: 101px; height: 50px;
-        border: solid 1px #000;
-        object-fit: cover;
-        margin-left: 20px;
+        margin-left: 0px;
+        text-align: center;
+        line-height: 50px;
     }
 
-    ul.cell li:first-child{
-        margin-left: 0px;
+    .item img{
+        width: 100px; height: auto;
     }
 
     .hooder{
@@ -1025,18 +1030,32 @@
     }
 
     .hooder_under{
-        display: block;
+        display: flexbox;
+        flex-direction: column;
         width: 375px; height: 364px;
+        
     }
 
     ul.hooder_menubar{
         display: block;
+        order: 1;
         width: 131.81px; height: 196px;
         border: solid 1px #000;
+        margin-left: 227px;
     }
 
     ul.hooder_menubar li{
         display: block;
+    }
+
+    .hooder_sns{
+        order: 2;
+        margin: 40px auto auto auto;
+    }
+
+    .copywrite{
+        order: 3;
+        margin: auto;
     }
 
   }
