@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="style.css">
 
 <title>HeroInterview</title>
@@ -11,27 +12,46 @@
     
     <!--header-->
     <div class="header">
-        <img id="menu" src="image/menu.png">
-        <img id="title" src ="image/titlelogo.png" > <!--タイトルロゴ-->
+        <img class="menu" src="image/menu.png">
+        <img class="title" src ="image/titlelogo.png" > <!--タイトルロゴ-->
 
         <ul class="sns">            
-            <li><img id="youtube" src="image/youtube.png"></li>
-            <li><img id="facebook" src="image/facebook.png"></li>
-            <li><img id="twitter" src="image/twitter.png"></li>
+            <li><img  src="image/twitter.png"></li>
+            <li><img  src="image/facebook.png"></li>
+            <li><img  src="image/youtube.png"></li>
         </ul>
     </div>
 
     <!--メニューバー-->
-    <ul class="HomeMenubar">
-        <li>READY?</li>
-        <li>ニュース</li>
-        <li>チーム検索・登録</li>
-        <li>アプリ</li>
-        <li>お問い合わせ</li>
-    </ul>
-    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-    <!--メイン画像-->
-    <img id="mainimg" src="image/mainimg.png">
+    <div class="header_menubar">
+        <ul class="HomeMenubar">
+            <li>READY?</li>
+            <li>ニュース</li>
+            <li>チーム検索・登録</li>
+            <li>アプリ</li>
+            <li>お問い合わせ</li>
+        </ul>
+    </div>
+    <!--top-->
+    <div class="top">
+        <div class="top_left">
+            <img src="image/main_image.png">
+        </div>
+
+        <div class="top_right">
+            <div class="top_right1">
+                 <img src="image/main_small.png">
+            </div>
+            <div class="top_right2">
+                <img src="image/main_2.png">
+           </div>
+           <div class="top_right3">
+                <img src="image/main_3.png">
+           </div>
+        </div>
+    
+
+    </div>
 
     <div class="contents">
 
@@ -40,18 +60,24 @@
         
         <div class="section1_left">
         
-            <div class="section1_title">WHO　WE　ARE</div>
+            <div class="section1_title">WHO WE ARE</div>
 
-            <ul class="section1_sentence">
+            <ul class="section1_sentence1">
                 <li>頑</li>
                 <li>張</li>
                 <li>る</li>
                 <li>若</li>
                 <li>者</li>
+            </ul>
+            <ul class="section1_sentence2">
                 <li>皆</li>
                 <li>ん</li>
                 <li>な</li>
                 <li>が</li>
+                <li class="line"><img src="image/stripe_line.png"></li>
+            </ul>
+            <ul class="section1_sentence2">
+                <li class="line"><img  src="image/stripe_line.png"></li>
                 <li>ヒ</li>
                 <li>ー</li>
                 <li>ロ</li>
@@ -59,19 +85,24 @@
             </ul>
 
             <div class="spotlight">
-                BE　IN　THE　SPOTLIGHT
+                BE IN THE SPOTLIGHT
             </div>
 
-            <div class="Btn">
-                ヒーローインタビューとは
+            <div class="section1_btn">
+                <p class="btn_name">ヒーローインタビューとは</p>
+                <div class="btn1_next"></div>
             </div>
         </div>
+
         <div class="section1_right">
-            gazou
+           
+                <div class="page_bar"></div>
+                <img class="page" src="image/section1_main.png">           
+                <img class="next_page" src="image/next_articles.png">
+        
+            
         </div>
     </div>
-    <!--<img id=section1 src="image/1section.png">-->
-
 
     <!--第二セクション-->
 
@@ -88,11 +119,12 @@
             </div>
 
             <div class="section2_menu">
-                <div class="moreBtn">
-                    More
+                <div class="section2_btn">
+                    <p class="btn_name_2">MORE</p>
+                    <div class="btn2_next"></div>
                 </div>
             
-                <ul class="contentMenu">
+                <ul class="content_menu">
                     <li>全ての情報</li>
                     <li>試合結果</li>
                     <li>インタビュー</li>
@@ -103,12 +135,31 @@
         </div>
 
         <div class="section2_right">
-            <ul class="special">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            <div class="special">
+                <ul class="special_content">
+                    <li class="special_image"></li>
+                    <li class="special_writer"></li>
+                    <li class="special_headline"></li>
+                </ul>
+
+                <ul class="special_content">
+                    <li class="special_image"></li>
+                    <li class="special_writer"></li>
+                    <li class="special_headline"></li>
+                </ul>
+
+                <ul class="special_content">
+                    <li class="special_image"></li>
+                    <li class="special_writer"></li>
+                    <li class="special_headline"></li>
+                </ul>
+                <ul class="special_content">
+                    <li class="special_image"></li>
+                    <li class="special_writer"></li>
+                    <li class="special_headline"></li>
+                </ul>
+                
+            </div>
         
         
         </div>
@@ -120,12 +171,22 @@
     <div class="section_3">
 
         <div class="section3_title">
-            PICKUP　TEAMS
+            PICKUP TEAMS
         </div>
+
         <div class="headline3">
-             The　Power　of　Teamwork.by　Team
+            <div class="headline3_1">
+                 The Power of
+            </div>
+
+            <div class="headline3_2">
+                Teamwork.
+            </div>
+
+            <div class="headline3_3">
+                by Team
+            </div>
         </div>
-        
 
         <ul class="picUp">
             <li><img src="image/picUp_1.png"></li>
@@ -133,126 +194,229 @@
             <li><img src="image/picUp_3.png"></li>
             <li><img src="image/picUp_4.png"></li>
             <li><img src="image/picUp_5.png"></li>
-            <li class="picUp_join"><img src="image/join_batonpath.png"></li>
+            <li><img class="join" src="image/join_batonpath.png"></li>
         </ul>
 
     </div>
 
-    <div class="Btn">チームをもっとみる</div>
+    <div class="section3_btn">
+        <p class="btn_name">チームをもっとみる</p>
+        <div class="btn3_next"></div>
+    </div>
 
 
 
     <!--スポンサーリンク一覧-->
-    <div class="sponser">
+    <div class="section_4">
 
-        <div class="section_title">
-            <p class="section_title_font">CLIENTS</p><br>
+        <div class="section4_title">
+            CLIENTS
         </div>
-        <p class="headline">Act With One Heart and Mind.</p><br>
+        <div class="headline4">
+            Act With One Heart and Mind.
+        </div>
 
+        <div class="cell">
+            <div class="item"><img src="image/yomiuri.png"></div>
+            <div class="item"><img src="image/asics.png"></div>
+            <div class="item"><img src="image/s_authority.png"></div>
+            <div class="item"><img src="image/bellemaison.png"></div>
+            <div class="item"><img src="image/bestoen.png"></div>
+            <div class="item"><img src="image/eccjr.png"></div>
+    
+            <div class="item"><img src="image/union.png"></div>
+            <div class="item"><img src="image/sanko.png"></div>
+            <div class="item"><img src="image/sagawa.png"></div>
+            <div class="item"><img src="image/aoyama.png"></div>
+            <div class="item"><img src="image/livemax.png"></div>
+            <div class="item"><img src="image/moving_global_senko.png"></div>
+
+            <div class="item"><img src="image/fukuya.png"></div>
+            <div class="item"><img src="image/shaball.png"></div>
+            <div class="item"><img src="image/osho.png"></div>
+            <div class="item"><img src="image/visionup.png"></div>
+            <div class="item"><img src="image/utamaro.png"></div>
+            <div class="item"><img src="image/p-and-p.png"></div>
+
+            <div class="item"><img src="image/sas.png"></div>
+            <div class="item"><img src="image/abest.png"></div>
+            <div class="item"><img src="image/src.png"></div>
+            <div class="item"><img src="image/raq.png"></div>
+            <div class="item"><img src="image/marukyo.png"></div>
+            <div class="item"><img src="image/yaokin.png"></div>
+
+            <div class="item"><img src="image/aiaio.png"></div>
+            <div class="item"><img src="image/mk.png"></div>
+            <div class="item"><img src="image/naigai.png"></div>
+            <div class="item"><img src="image/matsushita.png"></div>
+            <div class="item"><img src="image/kamadoya.png"></div>
+            <div class="item"><img src="image/oriba-.png"></div>
+
+            <div class="item"><img src="image/dc.png"></div>
+            <div class="item"><img src="image/printcarry.png"></div>
+            <div class="item"><img src="image/oogata.png"></div>
+            <div class="item"><img src="image/sys.png"></div>
+            <div class="item"><img src="image/g-try.png"></div>
+            <div class="item"><img src="image/fukuda.png"></div>
+
+            <div class="item"><img src="image/hotelplazaosaka.png"></div>
+            <div class="item"><img src="image/artjoy.png"></div>
+            <div class="item"><img src="image/bottom_up.png"></div>
+            <div class="item"><img src="image/maruichi.png"></div>
+            <div class="item"><img src="image/cleanup.png"></div>
+            <div class="item"><img src="image/heartland.png"></div>
+
+            <div class="item"><img src="image/kanpo_logo.png"></div>
+            <div class="item"><img src="image/maruyama_logo.png"></div>
+            <div class="item"><img src="image/purina_logo.png"></div>
+            <div class="item"><img src="image/senko_logo.png"></div>
+            <div class="item"><img src="image/worklifecare_logo.png"></div>
+            <div class="item"><img src="image/sugiyama_logo.png"></div>
+
+            <div class="item"><img src="image/boltonplus_logo.png"></div>
+            <div class="item"><img src="image/kazeno.png"></div>
+            <div class="item"><img src="image/tintai.png"></div>
+            <div class="item"><img src="image/petabit.png"></div>
+            <div class="item"><img src="image/jvc.png"></div>
+            <div class="item"><img src="image/juteru.png"></div>
+ 
+            <div class="item"><img src="image/tat.png"></div>       
+        </div>
+    </div>
+    <!--<ul class="cell">
+        <li><img src="image/yomiuri.png"></li>
+        <li><img src="image/asics.png"></li>
+        <li><img src="image/s_authority.png"></li>
+        <li><img src="image/bellemaison.png"></li>
+        <li><img src="image/bestoen.png"></li>
+        <li><img src="image/eccjr.png"></li>
+    </ul>
     <ul class="cell">
-    <li><img src="image/yomiuri.png"></li>
-    <li><img src="image/asics.png"></li>
-    <li><img src="image/s_authority.png"></li>
-    <li><img src="image/bellemaison.png"></li>
-    <li><img src="image/bestoen.png"></li>
-    <li><img src="image/eccjr.png"></li>
-    <li><img src="image/union.png"></li>
-    <li><img src="image/sanko.png"></li>
-    <li><img src="image/sagawa.png"></li>
-    <li><img src="image/aoyama.png"></li>
-    <li><img src="image/livemax.png"></li>
-    <li><img src="image/moving_global_senko.png"></li>
-    <li><img src="image/fukuya.png"></li>
-    <li><img src="image/shaball.png"></li>
-    <li><img src="image/osho.png"></li>
-    <li><img src="image/visionup.png"></li>
-    <li><img src="image/utamaro.png"></li>
-    <li><img src="image/p-and-p.png"></li>
-    <li><img src="image/sas.png"></li>
-    <li><img src="image/abest.png"></li>
-    <li><img src="image/src.png"></li>
-    <li><img src="image/raq.png"></li>
-    <li><img src="image/marukyo.png"></li>
-    <li><img src="image/yaokin.png"></li>
-    <li><img src="image/aiaio.png"></li>
-    <li><img src="image/mk.png"></li>
-    <li><img src="image/naigai.png"></li>
-    <li><img src="image/matsushita.png"></li>
-    <li><img src="image/kamadoya.png"></li>
-    <li><img src="image/oriba-.png"></li>
-    <li><img src="image/dc.png"></li>
-    <li><img src="image/printcarry.png"></li>
-    <li><img src="image/oogata.png"></li>
-    <li><img src="image/sys.png"></li>
-    <li><img src="image/g-try.png"></li>
-    <li><img src="image/fukuda.png"></li>
-    <li><img src="image/hotelplazaosaka.png"></li>
-    <li><img src="image/artjoy.png"></li>
-    <li><img src="image/bottom_up.png"></li>
-    <li><img src="image/maruichi.png"></li>
-    <li><img src="image/cleanup.png"></li>
-    <li><img src="image/heartland.png"></li>
-    <li><img src="image/kanpo_logo.png"></li>
-    <li><img src="image/maruyama_logo.png"></li>
-    <li><img src="image/purina_logo.png"></li>
-    <li><img src="image/senko_logo.png"></li>
-    <li><img src="image/worklifecare_logo.png"></li>
-    <li><img src="image/sugiyama_logo.png"></li>
-    <li><img src="image/boltonplus_logo.png"></li>
-    <li><img src="image/kazeno.png"></li>
-    <li><img src="image/tintai.png"></li>
-    <li><img src="image/petabit.png"></li>
-    <li><img src="image/jvc.png"></li>
-    <li><img src="image/juteru.png"></li>
-    <li><img src="image/tat.png"></li>
+        <li><img src="image/union.png"></li>
+        <li><img src="image/sanko.png"></li>
+        <li><img src="image/sagawa.png"></li>
+        <li><img src="image/aoyama.png"></li>
+        <li><img src="image/livemax.png"></li>
+        <li><img src="image/moving_global_senko.png"></li>
+    </ul>
+    <ul class="cell">
+        <li><img src="image/fukuya.png"></li>
+        <li><img src="image/shaball.png"></li>
+        <li><img src="image/osho.png"></li>
+        <li><img src="image/visionup.png"></li>
+        <li><img src="image/utamaro.png"></li>
+        <li><img src="image/p-and-p.png"></li>
+    </ul>
+    <ul class="cell">
+        <li><img src="image/sas.png"></li>
+        <li><img src="image/abest.png"></li>
+        <li><img src="image/src.png"></li>
+        <li><img src="image/raq.png"></li>
+        <li><img src="image/marukyo.png"></li>
+        <li><img src="image/yaokin.png"></li>
+    </ul>
+    <ul class="cell">
+        <li><img src="image/aiaio.png"></li>
+        <li><img src="image/mk.png"></li>
+        <li><img src="image/naigai.png"></li>
+        <li><img src="image/matsushita.png"></li>
+        <li><img src="image/kamadoya.png"></li>
+        <li><img src="image/oriba-.png"></li>
+    </ul>
+    <ul class="cell">
+        <li><img src="image/dc.png"></li>
+        <li><img src="image/printcarry.png"></li>
+        <li><img src="image/oogata.png"></li>
+        <li><img src="image/sys.png"></li>
+        <li><img src="image/g-try.png"></li>
+        <li><img src="image/fukuda.png"></li>
+    </ul>
+    <ul class="cell">
+        <li><img src="image/hotelplazaosaka.png"></li>
+        <li><img src="image/artjoy.png"></li>
+        <li><img src="image/bottom_up.png"></li>
+        <li><img src="image/maruichi.png"></li>
+        <li><img src="image/cleanup.png"></li>
+        <li><img src="image/heartland.png"></li>
+    </ul>
+    <ul class="cell">
+        <li><img src="image/kanpo_logo.png"></li>
+        <li><img src="image/maruyama_logo.png"></li>
+        <li><img src="image/purina_logo.png"></li>
+        <li><img src="image/senko_logo.png"></li>
+        <li><img src="image/worklifecare_logo.png"></li>
+        <li><img src="image/sugiyama_logo.png"></li>
+    </ul>
+    <ul class="cell">
+        <li><img src="image/boltonplus_logo.png"></li>
+        <li><img src="image/kazeno.png"></li>
+        <li><img src="image/tintai.png"></li>
+        <li><img src="image/petabit.png"></li>
+        <li><img src="image/jvc.png"></li>
+        <li><img src="image/juteru.png"></li>
+    </ul>
+    <ul class="cell">
+        <li><img src="image/tat.png"></li>
     
     </ul>
-    </div>
+    </div>-->
 
-    <!--page Under-->
-    <div class = "page_Under">
-    <img id="U_logo" src ="image/titlelogo.png" > 
-
-    <div class="address">
-    <br>
-        神戸本社<br>
-        〒651-0084<br>
-        神戸市中央区磯辺通3-2-17　ワールド三宮ビル6階<br>
-    </div>
-
-    <div class="Link">
-        <ul class="LinkBox">
-            <li><img src="image/Map.png">　View on Google Maps<br></li>
-            <li><img src="image/Phone.png">　　078-200-2022<br></li>
-            <li><img src="image/App.png">　Download the App<br></li>
-        </ul>
-    </div>
-</div>
-</div>
 
     <!--hooderー-->
 
+    <div class = "hooder"> 
 
-    <div class="hooder">
+        <div class="hooder_up">
+            <img class="hooder_logo" src ="image/titlelogo.png" > 
 
-    © 2018 Herointerview Inc.
+            <div class="hooder_address">
+                 <div class="office">神戸本社</div>
+                 <div class="adress">
+                     〒651-0084<br>
+                     神戸市中央区磯辺通3-2-17 ワールド三宮ビル6階
+                 </div>
+            </div>
 
-    <ul class="sns">            
-        <li><img id="youtube" src="image/youtube.png"></li>
-        <li><img id="facebook" src="image/facebook.png"></li>
-        <li><img id="twitter" src="image/twitter.png"></li>
-    </ul>
+            
+            <ul class="link">
+                <li><img class="icon1" src="image/Map.png"><p>View on Google Maps</p></li>
+                <li><img class="icon2" src="image/Phone.png"><p> 078-200-2022</p></li>
+                <li><img class="icon3" src="image/App.png"><p>Download the App</p></li>
+            </ul>
+            
+        </div>
+ 
 
-    <ul class="menubar">
-        <li>HOME</li>
-        <li>ニュース</li>
-        <li>試合結果 </li>
-        <li>チーム検索・登録</li>
-        <li>アプリ</li>
-        <li>お問い合わせ</li>
-    </ul>
-</div>
+        <div class="hooder_under">
+            
+            <div class="copywrite">
+                ©2018 Herointerview Inc.
+            </div>
+
+            <div class="hooder_sns">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16.251" viewBox="0 0 20 16.251">
+                    <path id="パス_38" data-name="パス 38" class="cls-1" d="M81.29,114.7a11.6,11.6,0,0,0,11.675-11.675c0-.178,0-.354-.012-.53A8.349,8.349,0,0,0,95,100.372a8.19,8.19,0,0,1-2.357.646,4.118,4.118,0,0,0,1.8-2.27,8.223,8.223,0,0,1-2.606,1,4.107,4.107,0,0,0-6.993,3.742A11.65,11.65,0,0,1,76.392,99.2a4.106,4.106,0,0,0,1.27,5.478,4.073,4.073,0,0,1-1.862-.514v.052a4.1,4.1,0,0,0,3.292,4.022,4.1,4.1,0,0,1-1.853.07,4.108,4.108,0,0,0,3.834,2.85,8.234,8.234,0,0,1-5.1,1.76,8.353,8.353,0,0,1-.977-.059,11.617,11.617,0,0,0,6.29,1.84" transform="translate(-75 -98.45)"/>
+                </svg>   
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.378" height="20" viewBox="0 0 10.378 20">
+                    <path id="f" class="cls-1" d="M30.172,28.76v-9.11h3.075l.459-3.566H30.172V13.813c0-1.032.288-1.73,1.767-1.73h1.889V8.9a26.077,26.077,0,0,0-2.742-.138c-2.717,0-4.569,1.657-4.569,4.7v2.624H23.45v3.566h3.067v9.11Z" transform="translate(-23.45 -8.76)"/>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14">
+                    <path id="パス_39" data-name="パス 39" class="cls-1" d="M104.132,87.225a2.505,2.505,0,0,0-1.768-1.768c-1.56-.418-7.814-.418-7.814-.418s-6.254,0-7.814.418a2.5,2.5,0,0,0-1.768,1.768,27.941,27.941,0,0,0,0,9.628,2.5,2.5,0,0,0,1.768,1.768c1.56.418,7.814.418,7.814.418s6.254,0,7.814-.418a2.5,2.5,0,0,0,1.768-1.768,27.941,27.941,0,0,0,0-9.628ZM92.55,95.039v-6l5.2,3Z" transform="translate(-84.55 -85.039)"/>
+                </svg>                   
+            </div>
+
+            <ul class="hooder_menubar">
+                <li>HOME</li>
+                <li>ニュース</li>
+                <li>試合結果 </li>
+                <li>チーム検索・登録</li>
+                <li>アプリ</li>
+                <li>お問い合わせ</li>
+            </ul>
+        </div>
+   </div>
 
 
    
