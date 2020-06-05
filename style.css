@@ -5,7 +5,7 @@
   }
 
 
-  @media screen and (max-width: 1920px){
+  @media screen and (max-width: 3000px){
   /*header*/
 
     .header{
@@ -320,6 +320,10 @@
         width: 56px; height: 269px;
         border:solid 2px #FF585E;
         box-shadow: 4px 4px #35BEED;
+    }
+
+    .section2_btn_sp{
+        display: none;
     }
 
     .btn_name_2{
@@ -772,7 +776,7 @@
     }
 }
 
-  @media screen and (max-width: 411px){
+  @media screen and (max-width: 415px){
      .header{
         border: solid 1px #000;
 
@@ -855,7 +859,7 @@
     .section_2{
         border: solid 1px #000;
         width: 375px; height: 647px;
-        display: flexbox;
+        display: flex;
         flex-direction: column;
         margin-top: 80px;
     }
@@ -877,11 +881,19 @@
         font-size: 32px;
         margin-left: 0;
     }
-
     .section2_btn{
-        display: inline-flex;
+        display: none;
         width: 343px; height: 56px;
     }
+    
+
+    .section2_btn_sp{
+        display: inline-flex;
+        width: 343px; height: 56px;
+        border:solid 2px #FF585E;
+        box-shadow: 4px 4px #35BEED;
+    }
+    
 
     .btn_name_2{
         writing-mode: unset;
