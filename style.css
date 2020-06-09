@@ -780,8 +780,6 @@
 
   @media screen and (max-width: 415px){
      .header{
-        border: solid 1px #000;
-
          width: 375px; height: 70px;
      }
 
@@ -793,7 +791,7 @@
      .title{
          width: 148.03px; height: 32px;
          margin: 19px ;
-         margin-left: auto; margin-right: auto;
+         margin: 19px 0 0 65px;
      }
      ul.sns{
          display: none;
@@ -805,9 +803,8 @@
      }
 
      .top{
-        border: solid 1px #000;
          width: 375px; height: 375px;
-         margin-left: auto; margin-right: auto;
+         margin: 0;
      }
 
      .top_left img{
@@ -913,7 +910,6 @@
     .section2_right{
         width: 375px;
         height: 365px;
-        border: solid 1px #000;
         margin: 40px  0;
     }
 
@@ -924,7 +920,6 @@
 
     .special_content{
         display: inline-flex;
-        border: solid 1px #000;
         width: 343px; height: 112px;
         margin: 12px 0 0 16px;
          
