@@ -387,34 +387,36 @@
 
     .special{
         width: 712px; height: 427px;
-        border: solid 1px #F7F7F7;
-        margin-left: 40px;
+        margin-left: 24px;
         overflow: scroll;
     }
 
-    ul.special_content{
+    .special_content{
+        display: flex;
         width: 712px; height: 64px;
-        border: solid 1px #F7F7F7;
         margin-top: 24px;
     }
 
-    ul.special_content li.special_image{
-        display: inline-block;
+    .special_image{
         width: 120px; height: 64px;
         border: solid 1px #000000;
         background: #fff;
     }
 
-    ul.special_content li.special_writer{
-        display: inline-block;
+    .special_text{
+        display: flex;
+        margin-left: 12px;
+    }
+
+   .special_writer{
         width: 200px; height: 64px;
         border: solid 1px #000000;
     }
 
-    ul.special_content li.special_headline{
-        display: inline-block;
+    .special_headline{
         width: 367px; height: 64px;
         border: solid 1px #000000;
+        margin-left: 12px;
     }
 
     /*セクション3*/
@@ -857,27 +859,24 @@
     }
 
     .section_2{
-        border: solid 1px #000;
         width: 375px; height: 647px;
         display: flex;
         flex-direction: column;
         margin-top: 80px;
     }
 
-    .section2_left:disabled{
-        border: solid 1px #000;
-        width: auto; height: auto;
+    .section2_left{
+        width: auto; height: 142px;
+        margin: 0;
     }
 
     .section_title{
          width: 187px; height: 21px;
-         border: solid 1px #000;
          margin-left: 0;
     }
 
     .headline{
         width: 210px; height: 81px;
-        border: solid 1px #000;
         font-size: 32px;
         margin-left: 0;
     }
@@ -889,7 +888,7 @@
 
     .section2_btn_sp{
         display: inline-flex;
-        width: 343px; height: 56px;
+        width: 347px; height: 60px;
         border:solid 2px #FF585E;
         box-shadow: 4px 4px #35BEED;
     }
@@ -915,7 +914,7 @@
         width: 375px;
         height: 365px;
         border: solid 1px #000;
-        margin: 40px 0;
+        margin: 40px  0;
     }
 
     .special{
@@ -923,30 +922,36 @@
         margin: 0;
     }
 
-    ul.special_content{
+    .special_content{
         display: inline-flex;
         border: solid 1px #000;
         width: 343px; height: 112px;
+        margin: 12px 0 0 16px;
          
     }
 
-    ul.special_content li.special_image{
+   .special_image{
         display: flex;
         width: 80px; height: 80px;
         background: #CCCCCC;
     }
 
-    ul.special_content li.special_writer{
-        display:block;
-        width: 251px; height: 54px;
-        border: solid 1px #000;
+    .special_text{
+        display: block;
+        width: 251px; height: 112px;
         
     }
 
-    ul.special_content li.special_headline{
+   .special_writer{
+        display:block;
+        width: 251px; height: 54px;
+        
+    }
+
+    .special_headline{
         display: block;
         width: 251px; height: 54px;
-        border: solid 1px #000;
+        margin-left: 0;
     }
 
     .section_3{
